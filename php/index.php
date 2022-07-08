@@ -12,31 +12,34 @@
 	</header>
     
 	<main>
-		<p class="parte1">Seja bem-vindo(a)! <br> Este é um projeto PHP ligado com um banco de dados MySQL, realizado nas aulas de Programação Web II com orientação do professor Ronie Robson Campos. 
-		<br> Curso: Desenvolvimento de Sistemas
-		<br></br> Tipo de servidor: MariaDB
-		<br> Versão do servidor: 10.1.37-MariaDB
-		<br> Versão do PHP: 5.6.40 
-		<br> Versão do PhpMyAdmin: 4.8.4 </p> <br>
+		<div class="operacoes">
+			<div class="texto-form">
+				<p class="parte1">Seja bem-vindo(a)! <br> Este é um projeto PHP ligado com um banco de dados MySQL, realizado nas aulas de Programação Web II com orientação do professor Ronie Robson Campos. 
+				<br> Curso: Desenvolvimento de Sistemas
+				<br></br> Tipo de servidor: MariaDB
+				<br> Versão do servidor: 10.1.37-MariaDB
+				<br> Versão do PHP: 5.6.40 
+				<br> Versão do PhpMyAdmin: 4.8.4 </p> <br>
 
-		<hr>
+				<hr>
 
-		<p class="parte2"> 
-		CREATE DATABASE teste; <br></br> CREATE TABLE cadfun (
-		<br>&#160&#160&#160&#160 codfun int primary key auto_increment, 
-		br>&#160&#160&#160&#160 nome varchar(40) not null,
-		<br>&#160&#160&#160&#160 depto char(2),
-		<br>&#160&#160&#160&#160 codC int,
-		<br>&#160&#160&#160&#160 imagem  longblob
-		<br>);<br></br>CREATE TABLE cargos (
-		<br>&#160&#160&#160&#160 codC int primary key auto_increment, 
-		<br>&#160&#160&#160&#160 funcao char(20),
-		<br>&#160&#160&#160&#160 salario double
-		<br>);<br></br>
-		ALTER TABLE cadfun
-		<br>&#160&#160&#160&#160 ADD CONSTRAINT codC FOREIGN KEY(codC) REFERENCES cargos(codC);
-		</p>
-    </main>
+				<p class="parte2"> 
+				CREATE DATABASE teste; <br></br> CREATE TABLE cadfun (
+				<br>&#160&#160&#160&#160 codfun int primary key auto_increment, 
+				br>&#160&#160&#160&#160 nome varchar(40) not null,
+				<br>&#160&#160&#160&#160 depto char(2),
+				<br>&#160&#160&#160&#160 codC int,
+				<br>&#160&#160&#160&#160 imagem  longblob
+				<br>);<br></br>CREATE TABLE cargos (
+				<br>&#160&#160&#160&#160 codC int primary key auto_increment, 
+				<br>&#160&#160&#160&#160 funcao char(20),
+				<br>&#160&#160&#160&#160 salario double
+				<br>);<br></br>
+				ALTER TABLE cadfun
+				<br>&#160&#160&#160&#160 ADD CONSTRAINT codC FOREIGN KEY(codC) REFERENCES cargos(codC);</p>
+			</div>
+		</div>
+	</main>
 	
     <footer class="footer">
         <div class="dados">
